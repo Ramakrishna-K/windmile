@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+  
+
+
+ .round{
+    width: 300px;
+    height: 300px;
+    background-color: rgb(63, 20, 20);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 30px;
+ }
+.hi3{
+    width: 50px;
+    height: 50px;
+    background-color: rgb(148, 118, 118);
+    text-align: center;
+    color:rgb(180, 220, 78);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: x-large;
+    font-weight: bold;
+    border-radius: 50%;
+}
+.blade1{
+    position: absolute;
+    background-color: yellowgreen;
+    width: 200px;
+    height: 20px;
+    border-radius: 30px;
+    transform: rotate(90deg);
+}
+.blade2{
+    position: absolute;
+    background-color: yellowgreen;
+    width: 200px;
+    height: 20px;
+    border-radius: 30px;
+    transform: rotate(180deg);
+}
+.dot{
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background-color: rgb(26, 94, 168);
+    border-radius: 50%;
+    opacity: 0.7;
+}
+@keyframes blade1{
+    0%{
+        transform: rotate(0deg);
+    }
+    50%{
+        transform: rotate(1800deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+.blade1{
+    animation: blade1 1s linear 1s 5 normal;
+}
+@keyframes blade2{
+    0%{
+        transform: rotate(0deg);
+    }
+    50%{
+        transform: rotate(1800deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+.blade2{
+    animation: blade2 1s linear 1s 5 normal;
+}
+
+
+    </style>
+</head>
+<body>
+    <div class="round">
+        <div class="hi3">WindMill</div>
+        <div class="blade1"></div>
+        <div class="blade2"></div>
+        <div class="dot"></div>   
+    </div>
+</body>
+</html>
